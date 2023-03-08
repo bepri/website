@@ -15,7 +15,7 @@ export default function Main() {
       <Stack spacing={4}>
         <Image
           borderRadius='full'
-          boxsize='200px'
+          boxSize='200px'
           src={require('../assets/headshot.jpg')}
           alt='Me!'
         />
@@ -26,7 +26,7 @@ export default function Main() {
           leftIcon={<GoOctoface />}
           colorScheme='teal'
           variant='ghost'
-          onClick={() => (window.location = 'https://github.com/bepri')}
+          onClick={() => (window.location.href = 'https://github.com/bepri')}
         >
           Github
         </Button>
@@ -34,7 +34,7 @@ export default function Main() {
           leftIcon={<GoInbox />}
           colorScheme='teal'
           variant='ghost'
-          onClick={() => (window.location = 'mailto:imani@bepri.dev')}
+          onClick={() => (window.location.href = 'mailto:imani@bepri.dev')}
         >
           Email
         </Button>
@@ -42,7 +42,7 @@ export default function Main() {
           leftIcon={<GoFilePdf />}
           colorScheme='teal'
           variant='ghost'
-          onClick={() => (window.location = 'assets/resume.pdf')}
+          onClick={() => (window.location.href = 'assets/resume.pdf')}
         >
           Résumé
         </Button>

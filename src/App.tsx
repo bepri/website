@@ -1,7 +1,6 @@
 import Sidebar from './components/Sidebar';
 import './App.css';
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   useEffect(() => {
@@ -9,11 +8,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Sidebar />} />
-      </Routes>
-    </>
+    <Sidebar />
   );
 };
 
